@@ -1,0 +1,2 @@
+BOB,bob@domain.com
+ALICE,alice@domain.fr
