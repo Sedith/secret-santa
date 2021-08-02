@@ -1,15 +1,17 @@
-These scripts lets your shuffle a list of participants and send emails to them individually.
+# Secret Santa
 
-# HOW TO
+These scripts lets your shuffle a list of participants for a secret santa, and send emails to them individually.
 
-## Participants
+## HOW TO
+
+### Participants
 
 Fill the list of participants in the file "participants.txt", one participant by line with the syntax:
 
 BOB,bob@domain.com
 ALICE,alice@domain.fr
 
-## Forbidden pairs
+### Forbidden pairs
 
 If you want to forbid some pairs, you can add them in the file "forbidden_pairings.txt", one pair per line with this syntax(copy/paste the lines from "participants.txt" with a separating ';'):
 
@@ -17,7 +19,7 @@ BOB,bob@domain.com;ALICE,alice@domain.fr
 
 This means the script will not let Alice give a gift to Bob, or Bob give a gift to Alice. The script also insures no one gives themselves a gift. This can result in an impossible situation if every pair is forbidden (the script will run forever).
 
-## Suffling
+### Suffling
 
 Then, launch the suffle script :
 
@@ -27,7 +29,7 @@ This create a file "offers\_to.txt". The person written on line N of "participan
 
 You can make a few tests to check everything is fine.
 
-## Sending the emails
+### Sending the emails
 
 Update/complete the file "send_emails.py" with your email message, subject, domain, SMTP server, etc.
 Don't forget to make a few tests. Beware accentuated letters ...
