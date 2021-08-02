@@ -39,3 +39,7 @@ Then, send the emails :
 python send_emails.py
 
 If you don't look at "offers_to.txt", everything is very secret !
+
+## Acknowledgments
+
+:two_hearts: Most of the code was written by Diane Bury! :two_hearts:
